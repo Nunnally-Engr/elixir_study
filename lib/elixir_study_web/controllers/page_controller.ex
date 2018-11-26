@@ -7,4 +7,7 @@ defmodule ElixirStudyWeb.PageController do
   def filter(conn, _params) do
     render(conn, "study-filter.html")
   end
+  def sort(conn, _params) do
+    render(conn, "study-sort.html")
+  end
 end
