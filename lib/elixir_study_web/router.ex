@@ -17,6 +17,7 @@ defmodule ElixirStudyWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/study-filter", PageController, :filter
   end
 
   # Other scopes may use custom stacks.

@@ -4,4 +4,7 @@ defmodule ElixirStudyWeb.PageController do
   def index(conn, _params) do
     render(conn, "index.html")
   end
+  def filter(conn, _params) do
+    render(conn, "study-filter.html")
+  end
 end

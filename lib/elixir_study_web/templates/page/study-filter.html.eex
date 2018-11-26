@@ -1,0 +1,38 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
+  <p>study-filter</p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Resources</h2>
+    <%
+    data = 
+    [
+      %{ "name" => "斉藤一", "age" => 49, "team" => "会津新選組", "position" => "局長" }, 
+      %{ "name" => "沖田総司", "age" => 45, "team" => "新選組 一番組", "position" => "組長" }, 
+      %{ "name" => "土方歳三", "age" => 34, "team" => "箱館新選組", "position" => "局長" }, 
+      %{ "name" => "永倉新八", "age" => 30, "team" => "新選組 二番組", "position" => "組長" }, 
+      %{ "name" => "Nunnally", "age" => 32, "team" => "株式会社diffeasy", "position" => "BFF、サーバサイド寄り系エンジニア" }
+    ]
+    |> Enum.filter( fn( record ) -> record[ "age" ] >= 20 end )
+    %>
+
+    <table>
+      <tr>
+        <th>名前</th>
+        <th>年齢</th>
+        <th>所属</th>
+        <th>性格</th>
+      </tr>
+    <%= for record <- data do %>
+      <tr>
+        <th><%= record[ "name" ] %></th>
+        <td><%= record[ "age" ] %></td>
+        <td><%= record[ "team" ] %></td>
+        <td><%= record[ "position" ] %></td>
+      </tr>
+    <% end %>
+    </table>
+  </article>
+</section>
