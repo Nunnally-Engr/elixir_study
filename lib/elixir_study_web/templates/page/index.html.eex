@@ -16,6 +16,12 @@
       <li>
         <a href="<%= Routes.page_path(@conn, :db) %>">Db</a>
       </li>
+      <li>
+        <a href="<%= Routes.page_path(@conn, :qiita) %>">Qiita</a>
+      </li>
+      <li>
+        <a href="<%= Routes.page_path(@conn, :qiita_graf) %>">Qiita for Graf</a>
+      </li>
     </ul>
   </article>
 </section>

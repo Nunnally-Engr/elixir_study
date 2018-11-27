@@ -1,0 +1,29 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>study-qiita</h2>
+    <%
+    result = Json.get( "https://qiita.com", "/api/v2/items?query=firebase" )
+    data = result
+    columns = [ "id", "title", "created_at" ]
+    %>
+    <table border="1">
+    <tr>
+      <%= for column <- columns do %>
+      <th><%= column %></td>
+      <% end %>
+    </tr>
+    <%= for record <- data do %>
+    <tr>
+      <%= for column <- columns do %>
+      <td><%= record[ column ] %></td>
+      <% end %>
+    </tr>
+    <% end %>
+    </table>
+
+  </article>
+</section>

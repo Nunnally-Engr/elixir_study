@@ -13,4 +13,10 @@ defmodule ElixirStudyWeb.PageController do
   def db(conn, _params) do
     render(conn, "study-db.html")
   end
+  def qiita(conn, _params) do
+    render(conn, "study-qiita.html")
+  end
+  def qiita_graf(conn, _params) do
+    render(conn, "study-qiita-graf.html")
+  end
 end
