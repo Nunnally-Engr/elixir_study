@@ -19,4 +19,7 @@ defmodule ElixirStudyWeb.PageController do
   def qiita_graf(conn, _params) do
     render(conn, "study-qiita-graf.html")
   end
+  def vuejs(conn, _params) do
+    render(conn, "study-vuejs.html")
+  end
 end

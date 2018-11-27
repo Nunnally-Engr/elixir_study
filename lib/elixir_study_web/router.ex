@@ -5,7 +5,8 @@ defmodule ElixirStudyWeb.Router do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_flash
-    plug :protect_from_forgery
+    # SCRF対策を解除
+    # plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
 
@@ -22,6 +23,10 @@ defmodule ElixirStudyWeb.Router do
     get "/study-db", PageController, :db
     get "/study-qiita", PageController, :qiita
     get "/study-qiita-graf", PageController, :qiita_graf
+    get "/study-vuejs", PageController, :vuejs
+
+    resources "/posts", PostController, except: [:new, :edit]
+
   end
 
   # Other scopes may use custom stacks.

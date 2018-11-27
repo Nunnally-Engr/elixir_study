@@ -22,6 +22,9 @@
       <li>
         <a href="<%= Routes.page_path(@conn, :qiita_graf) %>">Qiita for Graf</a>
       </li>
+      <li>
+        <a href="<%= Routes.page_path(@conn, :vuejs) %>">Vue.js</a>
+      </li>
     </ul>
   </article>
 </section>
