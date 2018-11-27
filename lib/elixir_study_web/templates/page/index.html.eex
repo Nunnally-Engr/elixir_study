@@ -5,6 +5,19 @@
 
 <section class="row">
   <article class="column">
+    <h2>My Study Page</h2>
+    <ul>
+      <li>
+        <a href="<%= Routes.page_path(@conn, :filter) %>">filter</a>
+      </li>
+      <li>
+        <a href="<%= Routes.page_path(@conn, :sort) %>">Sort</a>
+      </li>
+    </ul>
+  </article>
+</section>
+<section class="row">
+  <article class="column">
     <h2>Resources</h2>
     <ul>
       <li>

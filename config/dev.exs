@@ -62,6 +62,6 @@ config :phoenix, :plug_init_mode, :runtime
 config :elixir_study, ElixirStudy.Repo,
   username: "postgres",
   password: "postgres",
-  database: "elixir_study_dev",
+  database: "elixir_study_db",
   hostname: "localhost",
   pool_size: 10
