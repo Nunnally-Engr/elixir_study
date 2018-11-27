@@ -7,10 +7,13 @@
 # General application configuration
 use Mix.Config
 
+config :elixir_study,
+  ecto_repos: [ElixirStudy.Repo]
+
 # Configures the endpoint
 config :elixir_study, ElixirStudyWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "8xe4t3xyA2NXXJ3kn4vGWmTWa9LXS+VVFc8H4zTZCx07HkqIntn9ektPp3lfmpHi",
+  secret_key_base: "PVRVFE89XPR6TujLKWx8N8HbhmFoCdzRYDXqjWHtQbC5WpLkB8a1d3jV1EOAFr+r",
   render_errors: [view: ElixirStudyWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: ElixirStudy.PubSub, adapter: Phoenix.PubSub.PG2]
 

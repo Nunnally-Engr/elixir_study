@@ -8,3 +8,11 @@ config :elixir_study, ElixirStudyWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+# Configure your database
+config :elixir_study, ElixirStudy.Repo,
+  username: "postgres",
+  password: "postgres",
+  database: "elixir_study_test",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox

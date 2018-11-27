@@ -40,7 +40,7 @@ defmodule ElixirStudyWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_elixir_study_key",
-    signing_salt: "8y3J3MS9"
+    signing_salt: "T9Whecxn"
 
   plug ElixirStudyWeb.Router
 end
