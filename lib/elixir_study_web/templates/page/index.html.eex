@@ -13,6 +13,9 @@
       <li>
         <a href="<%= Routes.page_path(@conn, :sort) %>">Sort</a>
       </li>
+      <li>
+        <a href="<%= Routes.page_path(@conn, :db) %>">Db</a>
+      </li>
     </ul>
   </article>
 </section>

@@ -19,6 +19,7 @@ defmodule ElixirStudyWeb.Router do
     get "/", PageController, :index
     get "/study-filter", PageController, :filter
     get "/study-sort", PageController, :sort
+    get "/study-db", PageController, :db
   end
 
   # Other scopes may use custom stacks.

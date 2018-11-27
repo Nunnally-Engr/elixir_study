@@ -1,6 +1,6 @@
 defmodule Db do
   def query( sql ) when sql != "" do
-    { :ok, result } = Ecto.Adapters.SQL.query( ElixirStudyDb.Repo, sql, [] )
+    { :ok, result } = Ecto.Adapters.SQL.query( ElixirStudy.Repo, sql, [] )
     result
   end
   def columns_rows( result ) do

@@ -10,4 +10,7 @@ defmodule ElixirStudyWeb.PageController do
   def sort(conn, _params) do
     render(conn, "study-sort.html")
   end
+  def db(conn, _params) do
+    render(conn, "study-db.html")
+  end
 end
